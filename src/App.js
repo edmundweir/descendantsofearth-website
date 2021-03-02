@@ -11,7 +11,7 @@ import PressKit from './components/pages/PressKit';
 function App() {
   return (
     <div className="App">
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Navbar />
           <Switch>
             <Route path='/' exact component={Home} />
